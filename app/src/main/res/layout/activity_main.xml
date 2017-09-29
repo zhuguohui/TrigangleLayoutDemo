@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zgh.triganglelayoutdemo.view.TriangleLayout
+        android:id="@+id/triangleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:rl_item_height_padding="auto_padding"
+        app:rl_item_width_padding="auto_padding"
+        app:rl_step="1"
+        app:rl_style="rl_style_un_regular_triangle" />
+
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="step=1" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_step"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加 View" />
+
+        <Button
+            android:id="@+id/btn_remove_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除 View" />
+
+        <Button
+            android:id="@+id/btn_step_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="step++" />
+
+        <Button
+            android:id="@+id/btn_step_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="step--" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_change_to_trapezoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变成梯形" />
+
+        <Button
+            android:id="@+id/btn_change_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反向" />
+    </LinearLayout>
+</RelativeLayout>

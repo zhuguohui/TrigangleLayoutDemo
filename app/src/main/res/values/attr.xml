@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TriangleLayout">
+        <!--一行最多item的个数,如果设置了的话则优先满足最大边，否则设置为auto自动计算成一个三角形-->
+        <attr name="rl_max_line_item_size" format="integer|enum">
+            <enum name="auto" value="-1" />
+        </attr>
+        <!--每一行相差的数量-->
+        <attr name="rl_step" format="integer" />
+        <!--item水平方向的padding-->
+        <attr name="rl_item_width_padding" format="dimension|enum|reference">
+            <enum name="auto_padding" value="-1" />
+        </attr>
+        <!--item竖直方向的padding-->
+        <attr name="rl_item_height_padding" format="dimension|enum|reference">
+            <enum name="auto_padding" value="-1" />
+        </attr>
+        <!--显示样式 正三角或-->
+        <attr name="rl_style" format="enum">
+            <enum name="rl_style_regular_triangle" value="0" />
+            <enum name="rl_style_un_regular_triangle" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
