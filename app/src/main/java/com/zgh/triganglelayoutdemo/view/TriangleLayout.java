@@ -192,6 +192,9 @@ public class TriangleLayout extends ViewGroup {
                 LineInfo lineInfo = new LineInfo();
                 if (MaxToMin) {
                     lineNumber -= mStep;
+                    if (lineNumber < 0) {
+                        break;
+                    }
                 } else {
                     lineNumber += mStep;
                 }
